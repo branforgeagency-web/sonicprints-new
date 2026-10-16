@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { faceGeometry } from "./card";
 import { PAINT } from "./painters";
-import { createNeonTails } from "./neonTails";
+import { createMorphPoints, sampleSphere } from "./morphPoints";
 import { BRAND, disposeTree, mountStage } from "./stage";
 import { labelTexture, type Painter } from "./textures";
 
@@ -374,9 +374,21 @@ export default function PrintOrbitScene({
           .then(() => repaints.forEach((r) => r()))
           .catch(() => {});
 
-        /* neon comet tails sweeping around the centre */
-        const tails = createNeonTails({ pixelRatio: renderer.getPixelRatio(), reduced });
-        const coreGroup = tails.group;
+        /* particle core: a calm sphere of sparkles (no morphing) */
+        const coreCount = window.innerWidth < 640 ? 5200 : 9500;
+        const cloud = createMorphPoints({
+          count: coreCount,
+          shapes: [sampleSphere(coreCount, 1.75)],
+          pixelRatio: renderer.getPixelRatio(),
+          size: 4.6,
+          hold: Infinity,
+          morph: 1,
+          spread: 1.8,
+          push: 0,
+          reduced,
+        });
+        const coreGroup = new THREE.Group();
+        coreGroup.add(cloud.points);
         world.add(coreGroup);
 
         // Soft glow behind the core that flares while a product is being printed.
@@ -501,7 +513,7 @@ export default function PrintOrbitScene({
         return {
           resize: (w, h) => {
             const narrow = w / h < 0.8;
-            tails.uniforms.uSize.value = narrow ? 5.5 : 8;
+            cloud.uniforms.uSize.value = narrow ? 2.4 : 4.6;
             // Phones: pull in closer and let the orbit run off the sides, so the core stays big.
             camera.position.set(0, 2.3, narrow ? 19 : 14.5);
             camera.lookAt(0, -0.2, 0);
@@ -595,7 +607,11 @@ export default function PrintOrbitScene({
             }
             sparkGeo.attributes.position.needsUpdate = true;
 
-            tails.update(t, activity);
+            cloud.update(t, dt);
+            cloud.uniforms.uEnergy.value +=
+              (activity - cloud.uniforms.uEnergy.value) * Math.min(1, dt * 4);
+            coreGroup.rotation.y = t * 0.25;
+            coreGroup.rotation.z = Math.sin(t * 0.3) * 0.12;
             const d = reduced
               ? 1
               : easeOutBack(THREE.MathUtils.clamp((t - 0.1) / 1.1, 0, 1));
@@ -608,7 +624,7 @@ export default function PrintOrbitScene({
             dust.position.y = Math.sin(t * 0.25) * 0.3;
           },
           dispose: () => {
-            tails.dispose();
+            cloud.dispose();
             disposeTree(world);
             disposeTree(dust);
           },
