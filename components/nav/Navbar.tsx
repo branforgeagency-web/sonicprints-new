@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import logo from "@/app/public/images/nav/soniclogo-trimmed.png";
+import { CartButton } from "@/components/cart";
 
 /* ------------------------------------------------------------------ */
 /* Content                                                             */
@@ -21,6 +22,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: "Kits", href: "/kits" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "FAQ", href: "/faq" },
+  { label: "Track Order", href: "/track" },
 ];
 
 const CTA: NavLink = { label: "Get a Quote", href: "/contact" };
@@ -173,6 +175,7 @@ export default function Navbar() {
         </ul>
 
         <div className="flex items-center gap-2 justify-self-end">
+          <CartButton />
           {/* CTA (desktop) */}
           <Link
             href={CTA.href}

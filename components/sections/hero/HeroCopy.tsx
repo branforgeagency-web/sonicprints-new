@@ -35,7 +35,7 @@ export default function HeroCopy() {
   }, []);
 
   return (
-    <div className="pointer-events-none relative flex h-full flex-col justify-end px-[clamp(16px,4vw,56px)] pt-28 pb-[clamp(24px,6vh,72px)] md:justify-center md:pb-[clamp(24px,8vh,96px)]">
+    <div className="pointer-events-none relative flex h-full flex-col justify-end site-gutter pt-28 pb-[clamp(24px,6vh,72px)] md:justify-center md:pb-[clamp(24px,8vh,96px)]">
       <div className="pointer-events-auto max-w-[720px]">
         <p style={delay(100)} className={`${RISE} mb-5 flex items-center gap-3 text-xs font-medium tracking-[0.2em] text-accent uppercase`}>
           <span className="h-px w-8 bg-current" />

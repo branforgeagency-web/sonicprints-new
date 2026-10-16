@@ -85,8 +85,8 @@ export default function Faq() {
       <section className="relative flex min-h-[86svh] items-end overflow-hidden bg-ink text-cream">
         <GlyphMorphScene />
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(0,20,8,0.95)_8%,rgba(0,20,8,0.2)_50%,transparent)]" />
-        <div className="relative w-full px-[clamp(16px,4vw,56px)] pt-32 pb-[clamp(40px,7vh,88px)]">
-          <div className="mx-auto max-w-6xl">
+        <div className="relative w-full site-gutter pt-32 pb-[clamp(40px,7vh,88px)]">
+          <div className="mx-auto">
             <p className="mb-5 flex items-center gap-3 font-mono text-xs tracking-[0.2em] text-accent uppercase">
               <span className="h-px w-8 bg-current" />
               FAQ · {TOTAL} answers
@@ -118,8 +118,8 @@ export default function Faq() {
       </section>
 
       {/* Questions */}
-      <section className="bg-cream px-[clamp(16px,4vw,56px)] py-[clamp(56px,8vw,110px)] text-ink">
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_320px]">
+      <section className="bg-cream site-gutter py-[clamp(56px,8vw,110px)] text-ink">
+        <div className="mx-auto grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_320px]">
           <div>
             {/* Tabs */}
             <div role="tablist" aria-label="FAQ topics" className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-2 [scrollbar-width:none]">

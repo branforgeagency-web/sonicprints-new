@@ -133,7 +133,7 @@ export default function HowItWorks() {
 
           {/* Intro */}
           <div
-            className={`absolute inset-x-0 bottom-0 px-[clamp(16px,4vw,56px)] pb-[clamp(40px,8vh,96px)] transition-[transform,opacity] duration-700 ${EASE} ${
+            className={`absolute inset-x-0 bottom-0 site-gutter pb-[clamp(40px,8vh,96px)] transition-[transform,opacity] duration-700 ${EASE} ${
               active === -1 ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-10 opacity-0"
             }`}
           >
@@ -214,8 +214,8 @@ export default function HowItWorks() {
       </section>
 
       {/* Promises */}
-      <section className="bg-cream px-[clamp(16px,4vw,56px)] py-[clamp(80px,10vw,150px)] text-ink">
-        <div className="mx-auto max-w-6xl">
+      <section className="bg-cream site-gutter py-[clamp(80px,10vw,150px)] text-ink">
+        <div className="mx-auto">
           <Reveal>
             <p className="mb-5 flex items-center gap-3 font-mono text-xs tracking-[0.2em] text-accent uppercase">
               <span className="h-px w-8 bg-current" />
@@ -242,7 +242,7 @@ export default function HowItWorks() {
 
       <Crew />
 
-      <section className="bg-ink px-[clamp(16px,4vw,56px)] pb-16 text-center">
+      <section className="bg-ink site-gutter pb-16 text-center">
         <Link href="/faq" className="text-sm text-cream/70 underline decoration-accent underline-offset-4 transition-colors hover:text-cream">
           Got questions about the process? Read the FAQ →
         </Link>

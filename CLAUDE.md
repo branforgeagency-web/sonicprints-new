@@ -31,19 +31,26 @@ Read this file instead of re-scanning the repo. Update it when structure changes
 ## Routes (`app/`)
 | Route | File | Renders |
 |---|---|---|
-| `/` | `page.tsx` | Hero → About → Marquee → Reviews (no kits on home) |
-| `/kits` | `kits/page.tsx` | `sections/kits/Kits.tsx` — KitRingScene hero + panel, `#catalogue` uses `StackedCards` ("All twelve, at a glance"), WhatsApp prompt, CtaBand |
+| `/` | `page.tsx` | Hero → About → Marquee → Products (FEATURED products — items with `featured: true` in catalogue.json — with AddToCart, pinned sideways scroll; last tile + View more → /kits#catalogue) → Audiences (B2B/B2C) → Reviews |
+| `/kits` | `kits/page.tsx` | `sections/kits/Kits.tsx` — KitRingScene hero (10 catalogue categories as ring cards, label "CATEGORY"; panel CTA → /categories/<slug>) + panel, `#catalogue` uses `StackedCards` ("Browse by category" — the 10 catalogue categories; each card links to /categories/<slug>), WhatsApp prompt, CtaBand |
 | `/how-it-works` | `how-it-works/page.tsx` | `HowItWorks.tsx` — pinned PipelineScene (7 stages), promises, `<Crew />` (`#crew`), FAQ link, CtaBand |
 | `/faq` | `faq/page.tsx` (FAQPage JSON-LD) | `faq/Faq.tsx` + `faqs.ts` — GlyphMorphScene hero ("?"→"✓"→"!"), search, tabs, accordion |
+| `/categories/[slug]` | `categories/[slug]/page.tsx` (generateStaticParams, slug in Suspense) | `sections/category/CategoryProducts.tsx` — category intro, product grid with AddToCart, other categories |
+| `/products/[slug]` | `products/[slug]/page.tsx` (generateStaticParams, slug read inside Suspense) | `sections/product/ProductDetail.tsx` — Amazon-style: `ProductGallery` (photo with hover zoom), `BuyBox` (options/qty → WhatsApp quote), about, specs, print methods, steps, FAQ, related |
+| `/checkout` | `checkout/page.tsx` | `sections/checkout/Checkout.tsx` — cart summary + customer form (B2B/B2C, pickup/delivery) → `placeOrder`, opens WhatsApp, clears cart, goes to /track?id=…&new=1 |
+| `/track` | `track/page.tsx` (Track in Suspense, reads ?id) | `sections/track/Track.tsx` — lookup by order ID, 7-step timeline, orders on this device |
 | `/contact` | `contact/page.tsx` | `quote/Quote.tsx` — QuoteScene + `QuoteForm` (via `KitAwareForm` in Suspense, `?kit=` pre-fills) + `ContactSection` ("Rather talk it through?") |
 
 Layout (`app/layout.tsx`): `<Navbar />` + children + `<Footer />`.
 
 ## Data (`lib/`)
 - `lib/site.ts`: `CONTACT` (phone +91 73387 53815, WhatsApp 917338753815, info@sonicprints.in, Gandhipuram address, `mapsQuery`), `TAGLINE`, `POSITIONING`, `QUOTE_SLA` ("2 working hours"), `KITS` (titles), `CREW` (+ `stages`), helpers `whatsappLink`, `mailtoLink`, `mapsLink`, `mapsEmbed`.
+- Catalogue: ALL content in `data/catalogue.json` — the official SonicPrints catalogue: 10 categories (shared details: tagline, description, highlights, options, specs, faqs, kit) with 124 items; an item may have `details` overrides and `featured: true`. Generated once from the official list; edit the JSON directly. `lib/products.ts` exports `CATEGORIES`, `PRODUCTS` (flattened, category details merged), `productBySlug`, `categoryBySlug`; photos are matched BY FILE NAME: `app/public/images/products/<category-slug>/<product-slug>.(webp|jpg|png|avif)` (+ optional `cover.*`); `scripts/sync-product-images.mjs` (`npm run images`, also `prebuild`) generates `lib/product-images.ts` (do not edit) and a README.md checklist in each folder. Items without a photo use `components/ui/ProductMedia` placeholder. Home slider shows FEATURED products; Kits page stacked cards show categories → `/categories/<slug>` (items + AddToCart) → `/products/<slug>`.
 - `lib/kits.ts`: `KIT_LIST` (12 kits: slug, number, title, description, includes, background/color rotating ink/cream/accent), `kitBySlug`. Single source for kits — StackedCards and site.ts derive from it.
 
 ## Components (`components/`)
+- Orders (FRONT-END ONLY demo, user chose this): `lib/orders.ts` — `ORDER_STEPS` (7 stages + crew owner), `placeOrder`, `useOrders`, `orderMessage`; saved in localStorage, `step` never advances (no backend). Upgrade path: replace this module with API/DB + admin.
+- `cart/` — quote cart (no prices): store in `lib/cart.ts` (useSyncExternalStore + localStorage, `cart.add/setQty/remove/clear/open/close`, `useCart`), `CartButton` (navbar, count badge), `CartDrawer` (in layout; edit qty, remove, send all on WhatsApp), `QtyStepper` (optional `onRemove` at 1), `AddToCart` (button → becomes − qty + bound to the cart line once added; used on home cards and product `BuyBox`).
 - `nav/Navbar.tsx` — owns `NAV_LINKS` (Home `/#home`, About `/#about`, Kits `/kits`, How It Works, FAQ) + CTA "Get a Quote" → `/contact`. Active state: `usePathname` + section scroll-spy on `/`.
 - `footer/Footer.tsx` (+ `ScrollToTop`) — columns Explore / Help / Contact. Known TODO: footer links don't exactly match navbar; user hasn't decided between aligning links vs redesign.
 - `sections/*` — one folder per section, each with `index.ts`: about, crew, faq, hero (`Hero.tsx` + `HeroCopy.tsx` cycling word), how-it-works, kits, marquee (uses CurvedLoop), quote (`Quote`, `QuoteForm` — sends via WhatsApp/mailto, `ContactSection` — channel rows + dark-filtered cropped map), reviews.

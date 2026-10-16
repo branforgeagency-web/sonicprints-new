@@ -58,7 +58,7 @@ export default function Audiences() {
     <section
       id="audiences"
       aria-labelledby="audiences-title"
-      className="relative overflow-hidden bg-white px-[clamp(16px,4vw,56px)] py-[clamp(72px,9vw,140px)] text-ink"
+      className="relative overflow-hidden bg-white site-gutter py-[clamp(72px,9vw,140px)] text-ink"
       onPointerEnter={() => setPaused(true)}
       onPointerLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
@@ -66,7 +66,7 @@ export default function Audiences() {
     >
       <div aria-hidden="true" className="pointer-events-none absolute top-1/2 right-0 h-[520px] w-[760px] -translate-y-1/2 rounded-full bg-accent/10 blur-[140px]" />
 
-      <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)]">
+      <div className="relative mx-auto grid grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)]">
         <div>
           <Reveal>
             <p className="mb-5 flex items-center gap-3 font-mono text-xs tracking-[0.2em] text-accent uppercase">

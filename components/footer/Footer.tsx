@@ -34,6 +34,7 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
       { label: "How It Works", href: "/how-it-works" },
       { label: "FAQ", href: "/faq" },
       { label: "Get a Quote", href: "/contact" },
+      { label: "Track Order", href: "/track" },
       { label: "WhatsApp", href: whatsappLink("Hi Sonic Prints!") },
     ],
   },

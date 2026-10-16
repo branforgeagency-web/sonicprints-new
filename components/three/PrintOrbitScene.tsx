@@ -24,12 +24,12 @@ const SPARKS = 260;
 /* ------------------------------------------------------------------ */
 
 /** Uniforms shared by every printable material: where the print line is, and its glow. */
-const shared = {
+export const shared = {
   uBeamX: { value: 0 },
   uGlow: { value: new THREE.Color(0xff8a2a).multiplyScalar(2.2) },
 };
 
-interface PrintState {
+export interface PrintState {
   /** 0 = blank, 1 = printing (left of the line is printed), 2 = printed. */
   uState: { value: number };
   uBlank: { value: THREE.Color };
@@ -92,7 +92,7 @@ function printable(
 /* Products                                                            */
 /* ------------------------------------------------------------------ */
 
-interface Product {
+export interface Product {
   obj: THREE.Object3D;
   prints: THREE.MeshStandardMaterial[];
 }
@@ -115,7 +115,7 @@ function tshirtShape() {
   return s;
 }
 
-function buildProducts(
+export function buildProducts(
   tex: (w: number, h: number, p: Painter) => THREE.Texture,
 ): Product[] {
   const plain = (

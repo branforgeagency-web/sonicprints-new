@@ -15,8 +15,8 @@ export default function CtaBand({
   text = `Tell us what you need — you'll have a quote within ${QUOTE_SLA}.`,
 }: Props) {
   return (
-    <section className="bg-cream px-[clamp(16px,1vw,56px)] py-[clamp(64px,2vw,120px)]">
-      <Reveal className="relative mx-auto flex max-w-6xl flex-col items-start gap-8 overflow-hidden rounded-[clamp(28px,3.5vw,48px)] bg-accent p-[clamp(28px,5vw,72px)] text-cream md:flex-row md:items-end md:justify-between">
+    <section className="bg-cream site-gutter py-[clamp(64px,2vw,120px)]">
+      <Reveal className="relative mx-auto flex flex-col items-start gap-8 overflow-hidden rounded-[clamp(28px,3.5vw,48px)] bg-accent p-[clamp(28px,5vw,72px)] text-cream md:flex-row md:items-end md:justify-between">
         <span
           aria-hidden="true"
           className="pointer-events-none absolute -right-24 -bottom-24 h-72 w-72 rounded-full border-[40px] border-cream/10"

@@ -10,9 +10,9 @@ export default function Crew() {
   const controls = useRef<CrewControls | null>(null);
 
   return (
-    <section id="crew" className="relative overflow-hidden bg-ink px-[clamp(16px,4vw,56px)] py-[clamp(80px,10vw,150px)] text-cream">
+    <section id="crew" className="relative overflow-hidden bg-ink site-gutter py-[clamp(80px,10vw,150px)] text-cream">
       <div aria-hidden="true" className="pointer-events-none absolute top-1/3 left-1/2 h-[480px] w-[900px] -translate-x-1/2 rounded-full bg-accent/15 blur-[140px]" />
-      <div className="relative mx-auto max-w-6xl">
+      <div className="relative mx-auto">
         <Reveal className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
             <p className="mb-5 flex items-center gap-3 font-mono text-xs tracking-[0.2em] text-accent uppercase">
@@ -27,11 +27,11 @@ export default function Crew() {
         </Reveal>
       </div>
 
-      <div className="relative mx-auto mt-6 h-[175vw] max-h-[1150px] max-w-7xl sm:h-[95vw] md:h-[70vw] lg:h-[600px]">
+      <div className="relative mx-auto mt-6 h-[175vw] max-h-[1150px] sm:h-[95vw] md:h-[70vw] lg:h-[600px]">
         <CrewScene crew={CREW} controlsRef={controls} />
       </div>
 
-      <ul className="relative mx-auto flex max-w-6xl flex-wrap justify-center gap-2" aria-label="Crew members">
+      <ul className="relative mx-auto flex flex-wrap justify-center gap-2" aria-label="Crew members">
         {CREW.map((m, i) => (
           <li key={m.name}>
             <button

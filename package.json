@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "images": "node scripts/sync-product-images.mjs",
+    "prebuild": "node scripts/sync-product-images.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

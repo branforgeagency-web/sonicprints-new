@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { CartDrawer, FloatingCart } from "@/components/cart";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/nav";
 import "./globals.css";
@@ -31,6 +32,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <FloatingCart />
+        <CartDrawer />
       </body>
     </html>
   );

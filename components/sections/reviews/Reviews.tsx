@@ -254,7 +254,7 @@ export default function Reviews() {
         style={{ background: "radial-gradient(520px circle at var(--sx) var(--sy), rgba(189,85,1,0.10), transparent 70%)" }}
       />
 
-      <div className="relative px-[clamp(16px,4vw,56px)]">
+      <div className="relative site-gutter">
         {/* Header */}
         <div ref={headRef} className="mb-[clamp(40px,6vw,80px)] flex flex-wrap items-end justify-between gap-8">
           <div>

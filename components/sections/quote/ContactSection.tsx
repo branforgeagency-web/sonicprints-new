@@ -125,9 +125,9 @@ export default function ContactSection() {
   const address = CONTACT.address.join(" ");
 
   return (
-    <section className="relative overflow-hidden bg-ink px-[clamp(16px,4vw,56px)] py-[clamp(80px,10vw,140px)] text-cream">
+    <section className="relative overflow-hidden bg-ink site-gutter py-[clamp(80px,10vw,140px)] text-cream">
       <div aria-hidden="true" className="pointer-events-none absolute -bottom-40 -left-40 h-[460px] w-[460px] rounded-full bg-accent/10 blur-[130px]" />
-      <div className="relative mx-auto max-w-6xl">
+      <div className="relative mx-auto">
         <Reveal className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
             <p className="mb-5 flex items-center gap-3 font-mono text-xs tracking-[0.2em] text-accent uppercase">

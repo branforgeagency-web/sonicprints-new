@@ -1,0 +1,1842 @@
+[
+  {
+    "slug": "corporate-and-office-essentials",
+    "number": "01",
+    "name": "Corporate & Office Essentials",
+    "tagline": "Everything your office prints, matched to one brand.",
+    "description": "Stationery, desk items and packaging for companies of every size — printed in your brand colours and kept consistent across every reorder, team and outlet.",
+    "kit": "stationery",
+    "highlights": [
+      "Brand-matched colours across every item and reorder",
+      "Premium papers, boards and finishes",
+      "Free layout help and a proof before printing",
+      "Bulk runs and repeat orders for every branch",
+      "One quote for your whole office kit"
+    ],
+    "options": [
+      {
+        "label": "Finish",
+        "values": [
+          "Matte",
+          "Gloss",
+          "Soft-touch",
+          "Spot UV"
+        ]
+      },
+      {
+        "label": "Print",
+        "values": [
+          "Single-sided",
+          "Double-sided"
+        ]
+      }
+    ],
+    "turnaround": "2–5 working days after design approval",
+    "printMethods": [
+      "Offset printing",
+      "Digital printing",
+      "Spot UV",
+      "Foil stamping"
+    ],
+    "specs": [
+      [
+        "Materials",
+        "Premium paper, card and board"
+      ],
+      [
+        "Print",
+        "Full colour (CMYK) or brand spot colours"
+      ],
+      [
+        "Finishes",
+        "Matte, gloss, soft-touch, spot UV, foil"
+      ],
+      [
+        "Quantity",
+        "Any quantity — single pieces to bulk runs"
+      ],
+      [
+        "Artwork",
+        "PDF, AI, PSD, PNG — or we design it"
+      ]
+    ],
+    "idealFor": [
+      "Corporate offices",
+      "Startups and SMEs",
+      "Clinics and studios",
+      "Retail and franchise outlets"
+    ],
+    "faqs": [
+      {
+        "q": "Can you design it for me?",
+        "a": "Yes. Share your brief, logo and details and our designers will prepare it. You approve a proof before anything is printed."
+      },
+      {
+        "q": "What quantity can I order?",
+        "a": "From a single piece to large bulk runs — tell us what you need and we'll quote for it."
+      },
+      {
+        "q": "How do I get a price?",
+        "a": "Add items to your cart or send an enquiry — we share a clear price and timeline within 2 working hours."
+      }
+    ],
+    "items": [
+      {
+        "slug": "business-cards",
+        "name": "Business cards",
+        "details": {
+          "text": "Matte, gloss or spot UV — cards people actually keep.",
+          "tagline": "The first thing people keep from you — make it feel premium.",
+          "description": "Custom-printed visiting cards on thick, smooth card stock, with finishes that make your logo stand out. Send us your design or let our designers lay it out to match the rest of your brand.",
+          "highlights": [
+            "Single or double-sided, full colour on both faces",
+            "Matte, gloss, soft-touch or spot UV finishes",
+            "Rounded corners and custom shapes on request",
+            "Free layout help so every card matches your brand",
+            "Consistent colour across reprints and every team member"
+          ],
+          "options": [
+            {
+              "label": "Finish",
+              "values": [
+                "Matte",
+                "Gloss",
+                "Soft-touch",
+                "Spot UV"
+              ]
+            },
+            {
+              "label": "Sides",
+              "values": [
+                "Single-sided",
+                "Double-sided"
+              ]
+            },
+            {
+              "label": "Corners",
+              "values": [
+                "Square",
+                "Rounded"
+              ]
+            }
+          ],
+          "turnaround": "2–3 working days after design approval",
+          "printMethods": [
+            "Digital printing",
+            "Offset printing",
+            "Spot UV",
+            "Foil stamping"
+          ],
+          "specs": [
+            [
+              "Standard size",
+              "3.5 × 2 in (89 × 51 mm)"
+            ],
+            [
+              "Stock",
+              "Premium card, 300–400 GSM"
+            ],
+            [
+              "Print",
+              "Full colour (CMYK), one or both sides"
+            ],
+            [
+              "Finishes",
+              "Matte, gloss, soft-touch, spot UV, foil"
+            ],
+            [
+              "Artwork",
+              "PDF, AI, PSD, PNG — or we design it"
+            ]
+          ],
+          "idealFor": [
+            "Founders and sales teams",
+            "New staff onboarding",
+            "Events and networking",
+            "Clinics, studios and shops"
+          ],
+          "faqs": [
+            {
+              "q": "Can you design the card for me?",
+              "a": "Yes. Share your logo and details and our designers will lay it out. You approve a proof before anything is printed."
+            },
+            {
+              "q": "Can I order cards for my whole team at once?",
+              "a": "Yes. Send us the list of names and roles and we'll print a matched set for everyone."
+            },
+            {
+              "q": "Do you keep my design for reprints?",
+              "a": "Yes, we keep your files so reorders are quick and match the first batch."
+            }
+          ]
+        },
+        "featured": true
+      },
+      {
+        "slug": "letterheads",
+        "name": "Letterheads"
+      },
+      {
+        "slug": "corporate-tent-cards",
+        "name": "Corporate tent cards"
+      },
+      {
+        "slug": "presentation-folders-and-portfolios",
+        "name": "Presentation folders and portfolios"
+      },
+      {
+        "slug": "notebooks-and-diaries",
+        "name": "Notebooks and diaries"
+      },
+      {
+        "slug": "daily-planners-and-pocket-diaries",
+        "name": "Daily planners and pocket diaries"
+      },
+      {
+        "slug": "desk-blotters",
+        "name": "Desk blotters"
+      },
+      {
+        "slug": "desk-calendars-and-wall-calendars",
+        "name": "Desk calendars and wall calendars"
+      },
+      {
+        "slug": "printed-envelopes",
+        "name": "Printed envelopes"
+      },
+      {
+        "slug": "custom-product-boxes",
+        "name": "Custom product boxes"
+      },
+      {
+        "slug": "shipping-cartons",
+        "name": "Shipping cartons"
+      },
+      {
+        "slug": "branded-paper-bags",
+        "name": "Branded paper bags"
+      }
+    ]
+  },
+  {
+    "slug": "schools-colleges-and-institutions",
+    "number": "02",
+    "name": "Schools, Colleges & Institutions",
+    "tagline": "Notebooks to hall tickets — one partner for the whole academic year.",
+    "description": "Academic stationery, exam material, ID cards and recognition items for schools, colleges and training institutes — printed accurately, on time, and securely where it matters.",
+    "kit": "team-employee",
+    "highlights": [
+      "Custom covers and inner pages with your institution's branding",
+      "Secure, confidential handling for exam material",
+      "Variable data printing for names, roll numbers and photos",
+      "Bulk runs planned around your academic calendar",
+      "Durable binding and materials for daily use"
+    ],
+    "options": [
+      {
+        "label": "Cover",
+        "values": [
+          "Softcover",
+          "Hardcover"
+        ]
+      },
+      {
+        "label": "Branding",
+        "values": [
+          "Institution logo",
+          "Custom design"
+        ]
+      }
+    ],
+    "turnaround": "3–7 working days after design approval",
+    "printMethods": [
+      "Offset printing",
+      "Digital printing",
+      "Variable data printing",
+      "PVC card printing"
+    ],
+    "specs": [
+      [
+        "Formats",
+        "A4, A5, custom sizes"
+      ],
+      [
+        "Binding",
+        "Stapled, perfect, wiro or case binding"
+      ],
+      [
+        "Data",
+        "Names, roll numbers, photos, barcodes"
+      ],
+      [
+        "Quantity",
+        "Any quantity — single pieces to bulk runs"
+      ],
+      [
+        "Artwork",
+        "PDF, Word, Excel data — or we design it"
+      ]
+    ],
+    "idealFor": [
+      "Schools",
+      "Colleges and universities",
+      "Coaching centres",
+      "Training institutes"
+    ],
+    "faqs": [
+      {
+        "q": "Can you design it for me?",
+        "a": "Yes. Share your brief, logo and details and our designers will prepare it. You approve a proof before anything is printed."
+      },
+      {
+        "q": "What quantity can I order?",
+        "a": "From a single piece to large bulk runs — tell us what you need and we'll quote for it."
+      },
+      {
+        "q": "How do I get a price?",
+        "a": "Add items to your cart or send an enquiry — we share a clear price and timeline within 2 working hours."
+      }
+    ],
+    "items": [
+      {
+        "slug": "school-notebooks-and-exercise-books",
+        "name": "School notebooks and exercise books"
+      },
+      {
+        "slug": "square-grid-notebooks",
+        "name": "Square-grid notebooks"
+      },
+      {
+        "slug": "sketchbooks",
+        "name": "Sketchbooks"
+      },
+      {
+        "slug": "school-diaries-and-student-planners",
+        "name": "School diaries and student planners"
+      },
+      {
+        "slug": "homework-logs",
+        "name": "Homework logs"
+      },
+      {
+        "slug": "hardcover-and-softcover-books",
+        "name": "Hardcover and softcover books"
+      },
+      {
+        "slug": "academic-journals",
+        "name": "Academic journals"
+      },
+      {
+        "slug": "yearbooks-and-graduation-memory-books",
+        "name": "Yearbooks and graduation memory books"
+      },
+      {
+        "slug": "report-cards-and-progress-books",
+        "name": "Report cards and progress books"
+      },
+      {
+        "slug": "question-papers-and-answer-booklets",
+        "name": "Question papers and answer booklets"
+      },
+      {
+        "slug": "hall-tickets",
+        "name": "Hall tickets"
+      },
+      {
+        "slug": "confidential-exam-envelopes",
+        "name": "Confidential exam envelopes"
+      },
+      {
+        "slug": "student-and-staff-pvc-id-cards",
+        "name": "Student and staff PVC ID cards",
+        "details": {
+          "text": "Staff, student and event ID cards with photo and details.",
+          "tagline": "Clear, durable ID cards that look as official as they are.",
+          "description": "Custom PVC ID cards printed with photos, names, roles and barcodes or QR codes. Made for offices, schools, colleges and events, with lanyards and holders to match.",
+          "highlights": [
+            "Photo, name, role and ID number on every card",
+            "Barcodes and QR codes for attendance or access",
+            "Tough PVC cards that resist bending and fading",
+            "Matching lanyards, clips and card holders",
+            "Bulk data printing from your Excel sheet"
+          ],
+          "options": [
+            {
+              "label": "Card",
+              "values": [
+                "PVC",
+                "PVC + lamination"
+              ]
+            },
+            {
+              "label": "Sides",
+              "values": [
+                "Single-sided",
+                "Double-sided"
+              ]
+            },
+            {
+              "label": "Accessories",
+              "values": [
+                "Card only",
+                "With lanyard",
+                "With holder + lanyard"
+              ]
+            }
+          ],
+          "turnaround": "2–4 working days after data and design approval",
+          "printMethods": [
+            "PVC card printing",
+            "Variable data printing"
+          ],
+          "specs": [
+            [
+              "Size",
+              "Standard CR80 (85.6 × 54 mm)"
+            ],
+            [
+              "Material",
+              "PVC, optional lamination"
+            ],
+            [
+              "Print",
+              "Full colour, one or both sides"
+            ],
+            [
+              "Data",
+              "Photos, names, IDs, barcodes / QR codes"
+            ],
+            [
+              "Input",
+              "Excel sheet + photos — or we design the layout"
+            ]
+          ],
+          "idealFor": [
+            "Offices and factories",
+            "Schools and colleges",
+            "Events and conferences",
+            "Hospitals and clinics"
+          ],
+          "faqs": [
+            {
+              "q": "How do I send details for many cards?",
+              "a": "Share an Excel sheet with names and IDs plus a folder of photos — we print every card from it."
+            },
+            {
+              "q": "Can you add a barcode or QR code?",
+              "a": "Yes, each card can carry its own barcode or QR code."
+            },
+            {
+              "q": "Do you supply lanyards?",
+              "a": "Yes. We can supply plain or printed lanyards and card holders."
+            }
+          ]
+        },
+        "featured": true
+      },
+      {
+        "slug": "custom-lanyards",
+        "name": "Custom lanyards"
+      },
+      {
+        "slug": "merit-badges-and-prefect-badges",
+        "name": "Merit badges and prefect badges"
+      },
+      {
+        "slug": "sports-day-ribbons-and-merit-stars",
+        "name": "Sports day ribbons and merit stars"
+      }
+    ]
+  },
+  {
+    "slug": "events-weddings-and-special-occasions",
+    "number": "03",
+    "name": "Events, Weddings & Special Occasions",
+    "tagline": "Invitations and event prints that set the tone before guests arrive.",
+    "description": "Wedding invitations, event stationery and on-site branding — from traditional cards and Viboothi covers to acrylic invites, wristbands and media walls.",
+    "kit": "event-exhibition",
+    "highlights": [
+      "Traditional and modern invitation styles",
+      "Foil stamping, embossing, vellum and acrylic finishes",
+      "Matching sets — invites, RSVPs, covers and thank-you cards",
+      "Names and details personalised on every piece",
+      "Event branding from tickets to backdrops"
+    ],
+    "options": [
+      {
+        "label": "Style",
+        "values": [
+          "Traditional",
+          "Modern",
+          "Luxury"
+        ]
+      },
+      {
+        "label": "Finish",
+        "values": [
+          "Matte",
+          "Foil",
+          "Embossed"
+        ]
+      }
+    ],
+    "turnaround": "3–7 working days after design approval",
+    "printMethods": [
+      "Digital printing",
+      "Offset printing",
+      "Foil stamping",
+      "Embossing",
+      "Large-format printing"
+    ],
+    "specs": [
+      [
+        "Materials",
+        "Textured card, vellum, acrylic, Tyvek, flex"
+      ],
+      [
+        "Finishes",
+        "Foil, emboss, deboss, laser cut"
+      ],
+      [
+        "Personalisation",
+        "Names, dates and venues on every piece"
+      ],
+      [
+        "Quantity",
+        "Any quantity — single pieces to bulk runs"
+      ],
+      [
+        "Artwork",
+        "We design it — or send your own"
+      ]
+    ],
+    "idealFor": [
+      "Weddings and receptions",
+      "Housewarmings and family functions",
+      "Corporate events",
+      "Concerts and festivals"
+    ],
+    "faqs": [
+      {
+        "q": "Can you design it for me?",
+        "a": "Yes. Share your brief, logo and details and our designers will prepare it. You approve a proof before anything is printed."
+      },
+      {
+        "q": "What quantity can I order?",
+        "a": "From a single piece to large bulk runs — tell us what you need and we'll quote for it."
+      },
+      {
+        "q": "How do I get a price?",
+        "a": "Add items to your cart or send an enquiry — we share a clear price and timeline within 2 working hours."
+      }
+    ],
+    "items": [
+      {
+        "slug": "traditional-wedding-invitations",
+        "name": "Traditional wedding invitations",
+        "featured": true
+      },
+      {
+        "slug": "boxed-wedding-invitations",
+        "name": "Boxed wedding invitations"
+      },
+      {
+        "slug": "scroll-invitations",
+        "name": "Scroll invitations"
+      },
+      {
+        "slug": "foil-stamped-invitations",
+        "name": "Foil-stamped invitations"
+      },
+      {
+        "slug": "acrylic-invitation-cards",
+        "name": "Acrylic invitation cards"
+      },
+      {
+        "slug": "vellum-invitation-jackets",
+        "name": "Vellum invitation jackets"
+      },
+      {
+        "slug": "save-the-date-cards",
+        "name": "Save-the-date cards"
+      },
+      {
+        "slug": "rsvp-cards-and-inserts",
+        "name": "RSVP cards and inserts"
+      },
+      {
+        "slug": "thank-you-cards",
+        "name": "Thank-you cards"
+      },
+      {
+        "slug": "viboothi-and-chandan-covers",
+        "name": "Viboothi and Chandan covers"
+      },
+      {
+        "slug": "shagun-and-cash-gifting-envelopes",
+        "name": "Shagun and cash-gifting envelopes"
+      },
+      {
+        "slug": "entry-tickets-and-raffle-tickets",
+        "name": "Entry tickets and raffle tickets"
+      },
+      {
+        "slug": "tyvek-event-wristbands",
+        "name": "Tyvek event wristbands"
+      },
+      {
+        "slug": "event-backdrops-and-media-walls",
+        "name": "Event backdrops and media walls"
+      },
+      {
+        "slug": "step-and-repeat-banners",
+        "name": "Step-and-repeat banners"
+      }
+    ]
+  },
+  {
+    "slug": "certificates-awards-and-warranty",
+    "number": "04",
+    "name": "Certificates, Awards & Warranty",
+    "tagline": "Recognition that looks — and feels — worth framing.",
+    "description": "Certificates, award documents and warranty cards on premium stock, with foil, embossing and presentation holders that make every achievement feel official.",
+    "kit": "corporate-gift",
+    "highlights": [
+      "Premium certificate papers and boards",
+      "Foil stamping and embossed seals",
+      "Names and details printed individually",
+      "Holders, folders and leatherette jackets",
+      "Serial-numbered warranty and guarantee cards"
+    ],
+    "options": [
+      {
+        "label": "Finish",
+        "values": [
+          "Plain",
+          "Foil-stamped",
+          "Embossed"
+        ]
+      },
+      {
+        "label": "Presentation",
+        "values": [
+          "Certificate only",
+          "With holder / folder"
+        ]
+      }
+    ],
+    "turnaround": "2–5 working days after design approval",
+    "printMethods": [
+      "Digital printing",
+      "Offset printing",
+      "Foil stamping",
+      "Embossing",
+      "Variable data printing"
+    ],
+    "specs": [
+      [
+        "Sizes",
+        "A4, A5 or custom"
+      ],
+      [
+        "Stock",
+        "Premium certificate paper and board"
+      ],
+      [
+        "Finishes",
+        "Foil, emboss, gold / silver borders"
+      ],
+      [
+        "Personalisation",
+        "Names, dates, serial numbers"
+      ],
+      [
+        "Quantity",
+        "Any quantity — single pieces to bulk runs"
+      ]
+    ],
+    "idealFor": [
+      "Schools and colleges",
+      "Corporate HR and training",
+      "Award ceremonies",
+      "Product brands (warranty cards)"
+    ],
+    "faqs": [
+      {
+        "q": "Can you design it for me?",
+        "a": "Yes. Share your brief, logo and details and our designers will prepare it. You approve a proof before anything is printed."
+      },
+      {
+        "q": "What quantity can I order?",
+        "a": "From a single piece to large bulk runs — tell us what you need and we'll quote for it."
+      },
+      {
+        "q": "How do I get a price?",
+        "a": "Add items to your cart or send an enquiry — we share a clear price and timeline within 2 working hours."
+      }
+    ],
+    "items": [
+      {
+        "slug": "graduation-diplomas",
+        "name": "Graduation diplomas"
+      },
+      {
+        "slug": "course-completion-certificates",
+        "name": "Course completion certificates"
+      },
+      {
+        "slug": "corporate-achievement-certificates",
+        "name": "Corporate achievement certificates"
+      },
+      {
+        "slug": "training-completion-certificates",
+        "name": "Training completion certificates"
+      },
+      {
+        "slug": "performance-award-certificates",
+        "name": "Performance award certificates"
+      },
+      {
+        "slug": "foil-stamped-certificates",
+        "name": "Foil-stamped certificates"
+      },
+      {
+        "slug": "embossed-certificates",
+        "name": "Embossed certificates"
+      },
+      {
+        "slug": "certificate-holders",
+        "name": "Certificate holders"
+      },
+      {
+        "slug": "certificate-folders",
+        "name": "Certificate folders"
+      },
+      {
+        "slug": "leatherette-certificate-jackets",
+        "name": "Leatherette certificate jackets"
+      },
+      {
+        "slug": "warranty-cards",
+        "name": "Warranty cards"
+      },
+      {
+        "slug": "guarantee-cards",
+        "name": "Guarantee cards"
+      }
+    ]
+  },
+  {
+    "slug": "outdoor-signage-and-display-boards",
+    "number": "05",
+    "name": "Outdoor Signage & Display Boards",
+    "tagline": "Be seen from the street — day and night.",
+    "description": "Banners, hoardings, shopfront and illuminated signage, plus portable promotion counters — built to stand out outdoors and stand up to the weather.",
+    "kit": "signage-display",
+    "highlights": [
+      "Flex, ACP, acrylic and LED signage",
+      "Backlit and illuminated options for night visibility",
+      "Weather-resistant materials and inks",
+      "Site measurement and installation support",
+      "Portable counters and tables for promotions"
+    ],
+    "options": [
+      {
+        "label": "Lighting",
+        "values": [
+          "Non-lit",
+          "Backlit",
+          "LED / illuminated"
+        ]
+      },
+      {
+        "label": "Install",
+        "values": [
+          "Supply only",
+          "Supply + install"
+        ]
+      }
+    ],
+    "turnaround": "2–10 working days depending on size and type",
+    "printMethods": [
+      "Large-format printing",
+      "Eco-solvent printing",
+      "CNC / laser cutting",
+      "LED fabrication"
+    ],
+    "specs": [
+      [
+        "Materials",
+        "Flex, star flex, vinyl, ACP, acrylic, PVC"
+      ],
+      [
+        "Sizes",
+        "Made to your site's measurements"
+      ],
+      [
+        "Lighting",
+        "Non-lit, backlit, LED, neon"
+      ],
+      [
+        "Install",
+        "Installation available on request"
+      ],
+      [
+        "Artwork",
+        "We design it — or send your own"
+      ]
+    ],
+    "idealFor": [
+      "Shops and showrooms",
+      "Restaurants and cafés",
+      "Offices and clinics",
+      "Promotions and roadshows"
+    ],
+    "faqs": [
+      {
+        "q": "Can you design it for me?",
+        "a": "Yes. Share your brief, logo and details and our designers will prepare it. You approve a proof before anything is printed."
+      },
+      {
+        "q": "What quantity can I order?",
+        "a": "From a single piece to large bulk runs — tell us what you need and we'll quote for it."
+      },
+      {
+        "q": "How do I get a price?",
+        "a": "Add items to your cart or send an enquiry — we share a clear price and timeline within 2 working hours."
+      }
+    ],
+    "items": [
+      {
+        "slug": "flex-banners",
+        "name": "Flex banners"
+      },
+      {
+        "slug": "flex-boards-and-hoardings",
+        "name": "Flex boards and hoardings"
+      },
+      {
+        "slug": "shopfront-signage",
+        "name": "Shopfront signage"
+      },
+      {
+        "slug": "backlit-signboards",
+        "name": "Backlit signboards"
+      },
+      {
+        "slug": "acp-signboards",
+        "name": "ACP signboards"
+      },
+      {
+        "slug": "3d-letter-signage",
+        "name": "3D letter signage"
+      },
+      {
+        "slug": "led-acrylic-signboards",
+        "name": "LED acrylic signboards"
+      },
+      {
+        "slug": "illuminated-channel-letters",
+        "name": "Illuminated channel letters"
+      },
+      {
+        "slug": "neon-name-boards",
+        "name": "Neon name boards"
+      },
+      {
+        "slug": "scrolling-digital-displays",
+        "name": "Scrolling digital displays"
+      },
+      {
+        "slug": "portable-pvc-promotion-tables",
+        "name": "Portable PVC promotion tables"
+      },
+      {
+        "slug": "sampling-desks",
+        "name": "Sampling desks"
+      },
+      {
+        "slug": "branded-promotional-counters",
+        "name": "Branded promotional counters"
+      }
+    ]
+  },
+  {
+    "slug": "in-office-branding-and-glass-graphics",
+    "number": "06",
+    "name": "In-Office Branding & Glass Graphics",
+    "tagline": "Turn plain walls and glass into your brand.",
+    "description": "Frosted and printed glass films, wall murals, wayfinding and safety graphics that bring your brand into the workspace — with privacy where you need it.",
+    "kit": "signage-display",
+    "highlights": [
+      "Frosted, printed and patterned glass films",
+      "Wall murals and vinyl quotes in any size",
+      "Wayfinding and safety graphics",
+      "Clean, bubble-free installation",
+      "Removable films that protect the glass"
+    ],
+    "options": [
+      {
+        "label": "Type",
+        "values": [
+          "Frosted",
+          "Printed",
+          "Custom pattern"
+        ]
+      },
+      {
+        "label": "Install",
+        "values": [
+          "Supply only",
+          "Supply + install"
+        ]
+      }
+    ],
+    "turnaround": "3–7 working days after design approval",
+    "printMethods": [
+      "Large-format printing",
+      "Vinyl plotting / cutting",
+      "Eco-solvent printing"
+    ],
+    "specs": [
+      [
+        "Materials",
+        "Frosted film, printable vinyl, wall graphics film"
+      ],
+      [
+        "Sizes",
+        "Measured and cut to your glass and walls"
+      ],
+      [
+        "Finish",
+        "Matte or gloss; removable options"
+      ],
+      [
+        "Install",
+        "Installation available on request"
+      ],
+      [
+        "Artwork",
+        "We design it — or send your own"
+      ]
+    ],
+    "idealFor": [
+      "Corporate offices",
+      "Co-working spaces",
+      "Clinics and hospitals",
+      "Showrooms and studios"
+    ],
+    "faqs": [
+      {
+        "q": "Can you design it for me?",
+        "a": "Yes. Share your brief, logo and details and our designers will prepare it. You approve a proof before anything is printed."
+      },
+      {
+        "q": "What quantity can I order?",
+        "a": "From a single piece to large bulk runs — tell us what you need and we'll quote for it."
+      },
+      {
+        "q": "How do I get a price?",
+        "a": "Add items to your cart or send an enquiry — we share a clear price and timeline within 2 working hours."
+      }
+    ],
+    "items": [
+      {
+        "slug": "plain-frosted-glass-stickers",
+        "name": "Plain frosted glass stickers"
+      },
+      {
+        "slug": "printed-frosted-glass-stickers",
+        "name": "Printed frosted glass stickers"
+      },
+      {
+        "slug": "logo-printed-glass-films",
+        "name": "Logo-printed glass films"
+      },
+      {
+        "slug": "custom-pattern-glass-films",
+        "name": "Custom-pattern glass films"
+      },
+      {
+        "slug": "vinyl-wall-quotes",
+        "name": "Vinyl wall quotes"
+      },
+      {
+        "slug": "corporate-wall-murals",
+        "name": "Corporate wall murals"
+      },
+      {
+        "slug": "directional-wayfinding-decals",
+        "name": "Directional wayfinding decals"
+      },
+      {
+        "slug": "glass-partition-branding-strips",
+        "name": "Glass partition branding strips"
+      },
+      {
+        "slug": "safety-visibility-bands",
+        "name": "Safety visibility bands"
+      }
+    ]
+  },
+  {
+    "slug": "stickers-labels-and-custom-die-cutting",
+    "number": "07",
+    "name": "Stickers, Labels & Custom Die-Cutting",
+    "tagline": "Labels and stickers in any material, cut to any shape.",
+    "description": "Paper, vinyl, clear and metallic stickers, packaging labels and tags — printed sharp and die-cut to exactly the shape your product needs.",
+    "kit": "retail-pos",
+    "highlights": [
+      "Paper, PVC, vinyl, clear and metallic stocks",
+      "Die-cut to any shape you need",
+      "Waterproof and laminated options",
+      "Sheets, singles or rolls for packing lines",
+      "Hang tags and price tags for retail"
+    ],
+    "options": [
+      {
+        "label": "Material",
+        "values": [
+          "Paper",
+          "Vinyl",
+          "Transparent",
+          "Metallic"
+        ]
+      },
+      {
+        "label": "Finish",
+        "values": [
+          "Matte",
+          "Gloss"
+        ]
+      }
+    ],
+    "turnaround": "2–4 working days after design approval",
+    "printMethods": [
+      "Digital printing",
+      "Die cutting",
+      "Lamination"
+    ],
+    "specs": [
+      [
+        "Materials",
+        "Paper, PVC, vinyl, clear, gold / silver metallic"
+      ],
+      [
+        "Shapes",
+        "Any shape — standard or custom die-cut"
+      ],
+      [
+        "Formats",
+        "Single stickers, sheets or rolls"
+      ],
+      [
+        "Quantity",
+        "Any quantity — single pieces to bulk runs"
+      ],
+      [
+        "Artwork",
+        "PDF, AI, PNG — or we design it"
+      ]
+    ],
+    "idealFor": [
+      "Product packaging",
+      "Food and bottle labels",
+      "Clothing brands",
+      "Retail stores"
+    ],
+    "faqs": [
+      {
+        "q": "Can you design it for me?",
+        "a": "Yes. Share your brief, logo and details and our designers will prepare it. You approve a proof before anything is printed."
+      },
+      {
+        "q": "What quantity can I order?",
+        "a": "From a single piece to large bulk runs — tell us what you need and we'll quote for it."
+      },
+      {
+        "q": "How do I get a price?",
+        "a": "Add items to your cart or send an enquiry — we share a clear price and timeline within 2 working hours."
+      }
+    ],
+    "items": [
+      {
+        "slug": "matte-paper-stickers",
+        "name": "Matte paper stickers"
+      },
+      {
+        "slug": "gloss-paper-stickers",
+        "name": "Gloss paper stickers"
+      },
+      {
+        "slug": "pvc-white-stickers",
+        "name": "PVC white stickers"
+      },
+      {
+        "slug": "waterproof-vinyl-stickers",
+        "name": "Waterproof vinyl stickers"
+      },
+      {
+        "slug": "clear-and-transparent-stickers",
+        "name": "Clear and transparent stickers"
+      },
+      {
+        "slug": "metallic-gold-stickers",
+        "name": "Metallic gold stickers"
+      },
+      {
+        "slug": "metallic-silver-stickers",
+        "name": "Metallic silver stickers"
+      },
+      {
+        "slug": "custom-die-cut-stickers",
+        "name": "Custom die-cut stickers",
+        "featured": true
+      },
+      {
+        "slug": "packaging-labels",
+        "name": "Packaging labels"
+      },
+      {
+        "slug": "carton-sealing-stickers",
+        "name": "Carton sealing stickers"
+      },
+      {
+        "slug": "retail-price-tags",
+        "name": "Retail price tags"
+      },
+      {
+        "slug": "clothing-hang-tags",
+        "name": "Clothing hang tags"
+      },
+      {
+        "slug": "custom-shaped-tags",
+        "name": "Custom-shaped tags"
+      }
+    ]
+  },
+  {
+    "slug": "badges-and-corporate-insignia",
+    "number": "08",
+    "name": "Badges & Corporate Insignia",
+    "tagline": "Name badges and insignia that make people easy to recognise.",
+    "description": "Button, name and ID badges in metal, acrylic and more — for staff, events, campaigns and schools, with pins or magnets and names printed or engraved.",
+    "kit": "team-employee",
+    "highlights": [
+      "Pin-back, magnetic and clip fittings",
+      "Metal, acrylic and printed options",
+      "Names engraved or printed individually",
+      "Event and campaign badges in bulk",
+      "Durable finishes for daily wear"
+    ],
+    "options": [
+      {
+        "label": "Material",
+        "values": [
+          "Printed",
+          "Metal",
+          "Acrylic"
+        ]
+      },
+      {
+        "label": "Fitting",
+        "values": [
+          "Pin",
+          "Magnet",
+          "Clip"
+        ]
+      }
+    ],
+    "turnaround": "3–6 working days after design approval",
+    "printMethods": [
+      "Digital printing",
+      "Sublimation",
+      "Laser engraving",
+      "Badge pressing"
+    ],
+    "specs": [
+      [
+        "Materials",
+        "Metal, acrylic, printed button badges"
+      ],
+      [
+        "Fittings",
+        "Pin-back, magnetic, clip"
+      ],
+      [
+        "Personalisation",
+        "Names and titles printed or engraved"
+      ],
+      [
+        "Quantity",
+        "Any quantity — single pieces to bulk runs"
+      ],
+      [
+        "Artwork",
+        "PDF, AI, PNG — or we design it"
+      ]
+    ],
+    "idealFor": [
+      "Staff and front office teams",
+      "Events and conferences",
+      "Political and social campaigns",
+      "Schools"
+    ],
+    "faqs": [
+      {
+        "q": "Can you design it for me?",
+        "a": "Yes. Share your brief, logo and details and our designers will prepare it. You approve a proof before anything is printed."
+      },
+      {
+        "q": "What quantity can I order?",
+        "a": "From a single piece to large bulk runs — tell us what you need and we'll quote for it."
+      },
+      {
+        "q": "How do I get a price?",
+        "a": "Add items to your cart or send an enquiry — we share a clear price and timeline within 2 working hours."
+      }
+    ],
+    "items": [
+      {
+        "slug": "pin-back-button-badges",
+        "name": "Pin-back button badges"
+      },
+      {
+        "slug": "event-badges",
+        "name": "Event badges"
+      },
+      {
+        "slug": "campaign-badges",
+        "name": "Campaign badges"
+      },
+      {
+        "slug": "school-prefect-badges",
+        "name": "School prefect badges"
+      },
+      {
+        "slug": "magnetic-name-badges",
+        "name": "Magnetic name badges"
+      },
+      {
+        "slug": "metal-name-badges",
+        "name": "Metal name badges"
+      },
+      {
+        "slug": "acrylic-name-badges",
+        "name": "Acrylic name badges"
+      },
+      {
+        "slug": "engraved-id-badges",
+        "name": "Engraved ID badges"
+      },
+      {
+        "slug": "sublimated-id-badges",
+        "name": "Sublimated ID badges"
+      }
+    ]
+  },
+  {
+    "slug": "marketing-collateral-and-promotional-items",
+    "number": "09",
+    "name": "Marketing Collateral & Promotional Items",
+    "tagline": "Print and merch that keep your brand in people's hands.",
+    "description": "Flyers, brochures and posters to spread the word, plus branded apparel, mugs, bottles and tech accessories that people use every day.",
+    "kit": "marketing-promotion",
+    "highlights": [
+      "Print collateral and merchandise in one order",
+      "Apparel printed or embroidered",
+      "Drinkware and tech accessories with your logo",
+      "Design help for campaigns and launches",
+      "Single pieces to bulk giveaway runs"
+    ],
+    "options": [
+      {
+        "label": "Branding",
+        "values": [
+          "Print",
+          "Embroidery / engraving"
+        ]
+      },
+      {
+        "label": "Colours",
+        "values": [
+          "Full colour",
+          "Single colour"
+        ]
+      }
+    ],
+    "turnaround": "2–6 working days after design approval",
+    "printMethods": [
+      "Offset printing",
+      "Digital printing",
+      "Screen printing",
+      "DTF printing",
+      "Sublimation",
+      "Embroidery"
+    ],
+    "specs": [
+      [
+        "Print items",
+        "Flyers, brochures, catalogues, posters, stands"
+      ],
+      [
+        "Merchandise",
+        "Apparel, caps, mugs, tumblers, bottles, tech"
+      ],
+      [
+        "Branding",
+        "Print, embroidery, engraving"
+      ],
+      [
+        "Quantity",
+        "Any quantity — single pieces to bulk runs"
+      ],
+      [
+        "Artwork",
+        "PDF, AI, PSD, PNG — or we design it"
+      ]
+    ],
+    "idealFor": [
+      "Product launches",
+      "Trade shows and events",
+      "Employee and client gifts",
+      "Retail promotions"
+    ],
+    "faqs": [
+      {
+        "q": "Can you design it for me?",
+        "a": "Yes. Share your brief, logo and details and our designers will prepare it. You approve a proof before anything is printed."
+      },
+      {
+        "q": "What quantity can I order?",
+        "a": "From a single piece to large bulk runs — tell us what you need and we'll quote for it."
+      },
+      {
+        "q": "How do I get a price?",
+        "a": "Add items to your cart or send an enquiry — we share a clear price and timeline within 2 working hours."
+      }
+    ],
+    "items": [
+      {
+        "slug": "flyers-and-leaflets",
+        "name": "Flyers and leaflets",
+        "details": {
+          "text": "Pamphlets and flyers that get your offer into people's hands.",
+          "tagline": "Tell your story in print — sharp, bright and ready to hand out.",
+          "description": "Custom printed pamphlets, flyers and leaflets for launches, offers and events. Choose the size, paper and fold — we'll help with the layout so your message lands.",
+          "highlights": [
+            "A4, A5 and DL sizes — or custom",
+            "Single sheet, bi-fold or tri-fold",
+            "Glossy or matte paper in a range of weights",
+            "Bright full-colour print on both sides",
+            "Layout and copy help included"
+          ],
+          "options": [
+            {
+              "label": "Size",
+              "values": [
+                "A4",
+                "A5",
+                "DL",
+                "Custom"
+              ]
+            },
+            {
+              "label": "Fold",
+              "values": [
+                "Flat",
+                "Bi-fold",
+                "Tri-fold"
+              ]
+            },
+            {
+              "label": "Paper",
+              "values": [
+                "Gloss",
+                "Matte"
+              ]
+            }
+          ],
+          "turnaround": "2–4 working days after design approval",
+          "printMethods": [
+            "Offset printing",
+            "Digital printing"
+          ],
+          "specs": [
+            [
+              "Sizes",
+              "A4, A5, DL or custom"
+            ],
+            [
+              "Folds",
+              "Flat, bi-fold, tri-fold"
+            ],
+            [
+              "Paper",
+              "Gloss or matte art paper"
+            ],
+            [
+              "Print",
+              "Full colour, one or both sides"
+            ],
+            [
+              "Artwork",
+              "PDF, AI, PSD — or we design it"
+            ]
+          ],
+          "idealFor": [
+            "Shop and product launches",
+            "Offers and discounts",
+            "Events and seminars",
+            "Door-to-door campaigns"
+          ],
+          "faqs": [
+            {
+              "q": "Which paper should I choose?",
+              "a": "Gloss makes photos pop; matte feels premium and is easier to write on. We can send samples."
+            },
+            {
+              "q": "Can you design the pamphlet?",
+              "a": "Yes. Share your content and logo and our designers will lay it out for approval."
+            },
+            {
+              "q": "How quickly can I get them?",
+              "a": "Usually within 2–4 working days of approving the design."
+            }
+          ]
+        },
+        "featured": true
+      },
+      {
+        "slug": "bi-fold-and-tri-fold-brochures",
+        "name": "Bi-fold and tri-fold brochures"
+      },
+      {
+        "slug": "product-catalogues",
+        "name": "Product catalogues"
+      },
+      {
+        "slug": "promotional-posters",
+        "name": "Promotional posters"
+      },
+      {
+        "slug": "roll-up-and-pull-up-stands",
+        "name": "Roll-up and pull-up stands"
+      },
+      {
+        "slug": "custom-printed-t-shirts",
+        "name": "Custom printed T-shirts",
+        "details": {
+          "text": "Team tees and uniforms, printed to last wash after wash.",
+          "tagline": "Uniforms and tees your team will actually want to wear.",
+          "description": "Custom T-shirts and uniforms printed with your logo and artwork. Choose the fabric, colour and print method — from a single custom tee to matching sets for the whole team.",
+          "highlights": [
+            "Front, back and sleeve prints in any combination",
+            "Cotton, poly-cotton and dri-fit fabrics",
+            "Sizes from XS to XXL, mixed in one order",
+            "Screen, DTF or sublimation — matched to your design",
+            "Names and numbers for teams and events"
+          ],
+          "options": [
+            {
+              "label": "Fabric",
+              "values": [
+                "Cotton",
+                "Poly-cotton",
+                "Dri-fit"
+              ]
+            },
+            {
+              "label": "Style",
+              "values": [
+                "Round neck",
+                "Polo",
+                "Oversized"
+              ]
+            },
+            {
+              "label": "Print position",
+              "values": [
+                "Front",
+                "Back",
+                "Front + back",
+                "Sleeve"
+              ]
+            }
+          ],
+          "turnaround": "3–6 working days after design approval",
+          "printMethods": [
+            "Screen printing",
+            "DTF printing",
+            "Sublimation",
+            "Embroidery"
+          ],
+          "specs": [
+            [
+              "Fabrics",
+              "Cotton, poly-cotton, dri-fit"
+            ],
+            [
+              "Sizes",
+              "XS – XXL (mixed sizes in one order)"
+            ],
+            [
+              "Colours",
+              "White, black, navy and more on request"
+            ],
+            [
+              "Print",
+              "Full colour or spot colour, multiple positions"
+            ],
+            [
+              "Artwork",
+              "PDF, AI, PSD, PNG — or we design it"
+            ]
+          ],
+          "idealFor": [
+            "Staff uniforms",
+            "Events and marathons",
+            "College and club teams",
+            "Personal custom tees"
+          ],
+          "faqs": [
+            {
+              "q": "Can I mix sizes in one order?",
+              "a": "Yes. Tell us how many of each size and we'll pack them labelled."
+            },
+            {
+              "q": "Which print method should I choose?",
+              "a": "Screen printing suits large runs of a simple design; DTF and sublimation suit full-colour artwork and small runs. We'll recommend the best fit."
+            },
+            {
+              "q": "Can you print just one T-shirt?",
+              "a": "Yes. We print single custom pieces as well as bulk orders."
+            }
+          ]
+        },
+        "featured": true
+      },
+      {
+        "slug": "polo-shirts",
+        "name": "Polo shirts"
+      },
+      {
+        "slug": "embroidered-apparel",
+        "name": "Embroidered apparel"
+      },
+      {
+        "slug": "printed-caps",
+        "name": "Printed caps",
+        "details": {
+          "text": "Logo caps for teams, events and merch drops.",
+          "tagline": "Put your brand where everyone looks — right up front.",
+          "description": "Custom caps with your logo printed or embroidered on the front panel. A favourite for staff uniforms, field teams, events and brand merchandise.",
+          "highlights": [
+            "Embroidered or printed logo on the front panel",
+            "Side and back placements for slogans or numbers",
+            "Black, white, navy and more cap colours",
+            "Adjustable strap fits most heads",
+            "Great for uniforms, events and merch"
+          ],
+          "options": [
+            {
+              "label": "Decoration",
+              "values": [
+                "Embroidery",
+                "Print"
+              ]
+            },
+            {
+              "label": "Colour",
+              "values": [
+                "Black",
+                "White",
+                "Navy",
+                "Custom colour"
+              ]
+            },
+            {
+              "label": "Logo position",
+              "values": [
+                "Front",
+                "Front + side",
+                "Front + back"
+              ]
+            }
+          ],
+          "turnaround": "4–6 working days after design approval",
+          "printMethods": [
+            "Embroidery",
+            "DTF printing",
+            "Heat transfer"
+          ],
+          "specs": [
+            [
+              "Style",
+              "Baseball cap with adjustable strap"
+            ],
+            [
+              "Colours",
+              "Black, white, navy and more on request"
+            ],
+            [
+              "Decoration",
+              "Embroidery or full-colour print"
+            ],
+            [
+              "Positions",
+              "Front, side, back"
+            ],
+            [
+              "Artwork",
+              "PDF, AI, PNG — or we digitise your logo"
+            ]
+          ],
+          "idealFor": [
+            "Field and delivery teams",
+            "Events and marathons",
+            "Brand merchandise",
+            "College and club teams"
+          ],
+          "faqs": [
+            {
+              "q": "Embroidery or print — which is better?",
+              "a": "Embroidery looks premium and lasts longest; print suits detailed, full-colour logos. We'll suggest the best fit for your design."
+            },
+            {
+              "q": "Can I order caps in different colours?",
+              "a": "Yes. Tell us how many of each colour and we'll match your logo to each."
+            },
+            {
+              "q": "Can you make just a few caps?",
+              "a": "Yes, from single pieces to bulk orders."
+            }
+          ]
+        },
+        "featured": true
+      },
+      {
+        "slug": "branded-ceramic-mugs",
+        "name": "Branded ceramic mugs"
+      },
+      {
+        "slug": "travel-tumblers",
+        "name": "Travel tumblers"
+      },
+      {
+        "slug": "water-bottles",
+        "name": "Water bottles",
+        "details": {
+          "text": "Branded bottles your team and clients use every day.",
+          "tagline": "Your logo, refilled and carried every single day.",
+          "description": "Custom printed steel and sipper bottles with your logo. A practical gift for employees, clients and event guests that keeps your brand in hand all day.",
+          "highlights": [
+            "Steel, insulated and sipper bottle options",
+            "Logo printed or laser-engraved",
+            "Black, white, silver and coloured bottles",
+            "Gift boxes available for client kits",
+            "Single pieces or bulk orders for teams"
+          ],
+          "options": [
+            {
+              "label": "Type",
+              "values": [
+                "Steel bottle",
+                "Insulated flask",
+                "Sipper"
+              ]
+            },
+            {
+              "label": "Colour",
+              "values": [
+                "Black",
+                "White",
+                "Silver",
+                "Custom colour"
+              ]
+            },
+            {
+              "label": "Branding",
+              "values": [
+                "Print",
+                "Laser engraving"
+              ]
+            }
+          ],
+          "turnaround": "3–5 working days after design approval",
+          "printMethods": [
+            "UV printing",
+            "Laser engraving",
+            "Screen printing"
+          ],
+          "specs": [
+            [
+              "Types",
+              "Steel bottle, insulated flask, sipper"
+            ],
+            [
+              "Capacity",
+              "Common sizes from 500 ml to 1 litre"
+            ],
+            [
+              "Colours",
+              "Black, white, silver and more"
+            ],
+            [
+              "Branding",
+              "Full-colour print or laser engraving"
+            ],
+            [
+              "Packaging",
+              "Plain box, or branded gift box on request"
+            ]
+          ],
+          "idealFor": [
+            "Employee welcome kits",
+            "Client and festive gifts",
+            "Gyms and sports teams",
+            "Events and conferences"
+          ],
+          "faqs": [
+            {
+              "q": "Print or engraving — what lasts longer?",
+              "a": "Laser engraving is permanent and premium on steel; print suits colourful, detailed logos."
+            },
+            {
+              "q": "Can each bottle have a different name?",
+              "a": "Yes. Send us the list of names and we'll personalise every bottle."
+            },
+            {
+              "q": "Can bottles be part of a gift kit?",
+              "a": "Yes. They pair well with caps, T-shirts and keychains in our gift kits."
+            }
+          ]
+        },
+        "featured": true
+      },
+      {
+        "slug": "mouse-pads",
+        "name": "Mouse pads"
+      },
+      {
+        "slug": "power-banks",
+        "name": "Power banks"
+      },
+      {
+        "slug": "tech-sleeves",
+        "name": "Tech sleeves"
+      }
+    ]
+  },
+  {
+    "slug": "design-and-pre-press-services",
+    "number": "10",
+    "name": "Design & Pre-Press Services",
+    "tagline": "Print-ready design, done by people who print.",
+    "description": "Logo and brand identity design, layouts and pre-press work — files prepared properly so everything prints exactly as it should.",
+    "kit": "brand-identity",
+    "highlights": [
+      "Logos, brand guidelines and visual identity",
+      "Layouts and typesetting for any print job",
+      "Print-ready files checked for colour, bleed and resolution",
+      "Illustration, photo retouching and manipulation",
+      "Revisions until you're happy"
+    ],
+    "options": [
+      {
+        "label": "Delivery",
+        "values": [
+          "Print-ready PDF",
+          "Source files",
+          "Both"
+        ]
+      }
+    ],
+    "turnaround": "1–5 working days depending on scope",
+    "printMethods": [
+      "Graphic design",
+      "Pre-press",
+      "Colour management"
+    ],
+    "specs": [
+      [
+        "Deliverables",
+        "Print-ready PDF, AI / PSD source files, PNG / SVG"
+      ],
+      [
+        "Revisions",
+        "Included until approval"
+      ],
+      [
+        "Inputs",
+        "Your brief, references, existing assets"
+      ],
+      [
+        "Turnaround",
+        "1–5 working days depending on scope"
+      ]
+    ],
+    "idealFor": [
+      "New brands and startups",
+      "Rebrands",
+      "Agencies needing pre-press",
+      "Anyone printing with us"
+    ],
+    "faqs": [
+      {
+        "q": "Can you design it for me?",
+        "a": "Yes. Share your brief, logo and details and our designers will prepare it. You approve a proof before anything is printed."
+      },
+      {
+        "q": "What quantity can I order?",
+        "a": "From a single piece to large bulk runs — tell us what you need and we'll quote for it."
+      },
+      {
+        "q": "How do I get a price?",
+        "a": "Add items to your cart or send an enquiry — we share a clear price and timeline within 2 working hours."
+      }
+    ],
+    "items": [
+      {
+        "slug": "graphic-design",
+        "name": "Graphic design"
+      },
+      {
+        "slug": "logo-creation",
+        "name": "Logo creation"
+      },
+      {
+        "slug": "brand-guidelines",
+        "name": "Brand guidelines"
+      },
+      {
+        "slug": "visual-identity-design",
+        "name": "Visual identity design"
+      },
+      {
+        "slug": "pre-press-layout",
+        "name": "Pre-press layout"
+      },
+      {
+        "slug": "typesetting",
+        "name": "Typesetting"
+      },
+      {
+        "slug": "print-ready-file-optimization",
+        "name": "Print-ready file optimization"
+      },
+      {
+        "slug": "custom-vector-illustrations",
+        "name": "Custom vector illustrations"
+      },
+      {
+        "slug": "digital-photo-manipulation",
+        "name": "Digital photo manipulation"
+      },
+      {
+        "slug": "photo-retouching",
+        "name": "Photo retouching"
+      }
+    ]
+  }
+]

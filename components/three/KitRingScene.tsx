@@ -16,7 +16,7 @@ const INK = "#001408";
 const TEX_W = 640;
 const TEX_H = 890;
 
-function paintFront(kit: Kit, total: number): Painter {
+function paintFront(kit: Kit, total: number, label: string): Painter {
   return (ctx, w, h) => {
     ctx.fillStyle = kit.background;
     ctx.fillRect(0, 0, w, h);
@@ -25,7 +25,7 @@ function paintFront(kit: Kit, total: number): Painter {
 
     ctx.fillStyle = dim;
     ctx.font = `500 ${w * 0.042}px ${FONT}`;
-    ctx.fillText(`KIT ${kit.number} / ${String(total).padStart(2, "0")}`, w * 0.08, h * 0.08);
+    ctx.fillText(`${label} ${kit.number} / ${String(total).padStart(2, "0")}`, w * 0.08, h * 0.08);
 
     ctx.fillStyle = kit.color;
     ctx.font = `900 ${w * 0.36}px ${FONT}`;
@@ -37,12 +37,15 @@ function paintFront(kit: Kit, total: number): Painter {
     ctx.fillRect(w * 0.08, h * 0.46, w * 0.14, h * 0.008);
 
     ctx.fillStyle = kit.color;
-    ctx.font = `900 ${w * 0.115}px ${FONT}`;
-    const end = wrapText(ctx, kit.title.toUpperCase(), w * 0.08, h * 0.56, w * 0.84, w * 0.115);
+    // Long titles (category names) get a smaller size and fewer listed items so nothing overflows.
+    const long = kit.title.length > 24;
+    const size = w * (long ? 0.082 : 0.115);
+    ctx.font = `900 ${size}px ${FONT}`;
+    const end = wrapText(ctx, kit.title.toUpperCase(), w * 0.08, h * 0.56, w * 0.84, size);
 
     ctx.fillStyle = dim;
     ctx.font = `500 ${w * 0.04}px ${FONT}`;
-    kit.includes.slice(0, 5).forEach((item, i) => ctx.fillText(`— ${item}`, w * 0.08, end + h * 0.02 + i * w * 0.055));
+    kit.includes.slice(0, long ? 4 : 5).forEach((item, i) => ctx.fillText(`— ${item}`, w * 0.08, end + h * 0.02 + i * w * 0.055));
 
     ctx.fillStyle = kit.color;
     ctx.font = `900 ${w * 0.04}px ${FONT}`;
@@ -83,13 +86,15 @@ const CLICK_SLOP = 6; // px of movement still counted as a click
 
 interface Props {
   kits: Kit[];
+  /** Counter label on each card, e.g. "KIT" or "CATEGORY". */
+  label?: string;
   /** Index of the kit at the front, owned by the parent. */
   activeRef: RefObject<number>;
   onSelect: (index: number) => void;
   className?: string;
 }
 
-export default function KitRingScene({ kits, activeRef, onSelect, className = "" }: Props) {
+export default function KitRingScene({ kits, label = "KIT", activeRef, onSelect, className = "" }: Props) {
   const hostRef = useRef<HTMLDivElement>(null);
   const onSelectRef = useRef(onSelect);
   useEffect(() => {
@@ -125,7 +130,7 @@ export default function KitRingScene({ kits, activeRef, onSelect, className = ""
         repaints.push(back.repaint);
 
         const cards = kits.map((kit, i) => {
-          const front = labelTexture(TEX_W, TEX_H, paintFront(kit, N));
+          const front = labelTexture(TEX_W, TEX_H, paintFront(kit, N, label));
           repaints.push(front.repaint);
           const parts = roundedCard(CARD_W, CARD_H, 0.14, 0.06, front.texture, back.texture, BRAND.accent);
           const holder = new THREE.Group();
@@ -266,7 +271,7 @@ export default function KitRingScene({ kits, activeRef, onSelect, className = ""
       },
       { fov: 38, clearColor: BRAND.ink },
     );
-  }, [kits, activeRef]);
+  }, [kits, label, activeRef]);
 
   return <div ref={hostRef} aria-hidden="true" className={`absolute inset-0 touch-pan-y select-none ${className}`} />;
 }

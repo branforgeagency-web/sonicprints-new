@@ -171,3 +171,26 @@ body {
     transform: scaleX(1);
   }
 }
+
+/* Page side spacing — matches the About section (≈3.5% of the width; 24px tablet, 16px phone). */
+@utility site-gutter {
+  padding-inline: 3.5vw;
+  @media (width <= 900px) {
+    padding-inline: 24px;
+  }
+  @media (width <= 620px) {
+    padding-inline: 16px;
+  }
+}
+
+@keyframes cart-bump {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.35) rotate(-8deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

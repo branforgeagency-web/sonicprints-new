@@ -45,7 +45,7 @@ export default function Quote({ searchParams }: { searchParams: SearchParams }) 
             </div>
           </div>
 
-          <div className="relative px-[clamp(16px,4vw,56px)] pt-4 pb-[clamp(64px,8vw,120px)] lg:order-1 lg:pt-36">
+          <div className="relative site-gutter pt-4 pb-[clamp(64px,8vw,120px)] lg:order-1 lg:pt-36">
             <Reveal>
               <p className="mb-5 flex items-center gap-3 font-mono text-xs tracking-[0.2em] text-accent uppercase">
                 <span className="h-px w-8 bg-current" />

@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { KIT_LIST } from "@/lib/kits";
+import { CATEGORIES, PRODUCTS } from "@/lib/products";
 
 /* ------------------------------------------------------------------ */
 /* Content                                                             */
@@ -12,22 +13,33 @@ export interface StackCard {
   kicker: string;
   title: string;
   description: string;
+  /** Where clicking the card goes. */
+  href: string;
+  cta: string;
   background: string;
   color: string;
 }
 
-export const CARDS: StackCard[] = KIT_LIST.map((kit) => ({
-  number: kit.number,
-  kicker: `Kit ${kit.number} — ${kit.title} Kit`,
-  title: kit.title,
-  description: kit.description,
-  background: kit.background,
-  color: kit.color,
+/** Card colours rotate through the brand palette: ink, cream, accent. */
+const PALETTE = [
+  { background: "#001408", color: "#f7f4ee" },
+  { background: "#f7f4ee", color: "#001408" },
+  { background: "#bd5501", color: "#f7f4ee" },
+];
+
+export const CARDS: StackCard[] = CATEGORIES.map((c, i) => ({
+  number: c.number,
+  kicker: `Category ${c.number} — ${c.products.length} products`,
+  title: c.name,
+  description: c.description,
+  href: `/categories/${c.slug}`,
+  cta: `View ${c.products.length} products`,
+  ...PALETTE[i % PALETTE.length],
 }));
 
 const HERO = {
   lines: ["Print", "Without", "Limits"],
-  subtitle: "Twelve ready-made kits — everything your brand needs, printed on anything you need.",
+  subtitle: `${CATEGORIES.length} categories, ${PRODUCTS.length}+ products — everything your brand needs, printed on anything you need.`,
   background: "#bd5501",
 };
 
@@ -279,14 +291,15 @@ export default function StackedCards() {
 
         {/* Cards — later cards stack above earlier ones */}
         {CARDS.map((card, i) => (
-          <article
+          <Link
             key={card.number}
+            href={card.href}
             ref={(el) => {
               cardRefs.current[i] = el;
             }}
-            className="invisible absolute inset-0 flex h-full w-full flex-col justify-between p-[clamp(20px,4vw,56px)] will-change-transform"
-            style={{ zIndex: i + 1, background: card.background, color: card.color }}
-            aria-label={card.kicker}
+            className="group invisible absolute inset-0 flex h-full w-full flex-col justify-between p-[clamp(20px,4vw,56px)] will-change-transform focus-visible:outline-4 focus-visible:-outline-offset-8 focus-visible:outline-current"
+            style={{ zIndex: i + 1, background: card.background, color: card.color, ["--card-bg" as string]: card.background }}
+            aria-label={`${card.title} — ${card.cta}`}
           >
             <div className="flex items-start justify-between gap-6">
               <p className="pt-2 font-mono text-xs tracking-[0.2em] uppercase md:text-sm">{card.kicker}</p>
@@ -300,16 +313,23 @@ export default function StackedCards() {
             </div>
 
             <h3
-              className="max-w-[14ch] pr-14 text-[clamp(52px,14vw,88px)] md:pr-24 leading-[0.85] tracking-[-0.075em] uppercase md:text-[clamp(76px,10vw,185px)]"
+              className="max-w-[16ch] pr-14 text-[clamp(38px,10vw,64px)] md:pr-24 leading-[0.88] tracking-[-0.06em] uppercase md:text-[clamp(56px,7vw,124px)]"
               style={{ fontFamily: FONT_STACK, fontWeight: 900 }}
             >
               {card.title}
             </h3>
 
-            <p className="max-w-sm self-start text-base leading-snug opacity-85 md:self-end md:text-lg">
-              {card.description}
-            </p>
-          </article>
+            <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+              {/* fills with the text colour on hover; its text switches to the card colour */}
+              <span className="inline-flex items-center gap-3 self-start rounded-full border-2 border-current px-5 py-2.5 text-sm font-semibold transition-[background-color] duration-300 group-hover:bg-current">
+                <span className="transition-colors duration-300 group-hover:[color:var(--card-bg)]">{card.cta}</span>
+                <span aria-hidden="true" className="transition-[transform,color] duration-300 group-hover:translate-x-1 group-hover:[color:var(--card-bg)]">→</span>
+              </span>
+              <p className="max-w-sm self-start text-base leading-snug opacity-85 md:self-end md:text-lg">
+                {card.description}
+              </p>
+            </div>
+          </Link>
         ))}
 
         {/* Navigation rail — takes the colour of whatever is in place */}
