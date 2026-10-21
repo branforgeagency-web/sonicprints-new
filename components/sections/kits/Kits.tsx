@@ -78,7 +78,7 @@ export default function Kits() {
               {N} categories · {PRODUCTS.length}+ products
             </p>
             <h1 className="max-w-xl text-[clamp(32px,min(5.5vw,9vh),84px)] leading-[0.92] font-extrabold tracking-[-0.05em]">
-              Every stage of your brand, <span className="text-accent">kitted out.</span>
+              Everything your brand needs, <span className="text-accent">in one catalogue.</span>
             </h1>
           </div>
 
@@ -173,10 +173,10 @@ export default function Kits() {
         <div className="mx-auto">
           <Reveal className="flex flex-col items-start justify-between gap-4 rounded-[28px] border border-dashed border-ink/20 p-7 sm:flex-row sm:items-center">
             <p className="text-lg">
-              <span className="font-bold">Not sure which kit fits?</span> <span className="text-ink/65">Tell LEADO where your brand is — we&apos;ll suggest one.</span>
+              <span className="font-bold">Not sure where to start?</span> <span className="text-ink/65">Tell LEADO where your brand is — we&apos;ll suggest the right products.</span>
             </p>
             <a
-              href={whatsappLink("Hi Sonic Prints! Which kit would suit my brand?")}
+              href={whatsappLink("Hi Sonic Prints! Which products would suit my brand?")}
               target="_blank"
               rel="noopener noreferrer"
               className="shrink-0 rounded-full bg-ink px-5 py-3 text-sm font-medium text-cream transition-colors hover:bg-accent"
@@ -187,7 +187,7 @@ export default function Kits() {
         </div>
       </section>
 
-      <CtaBand title="Pick a kit. We'll do the rest." />
+      <CtaBand title="Pick your products. We'll do the rest." />
     </>
   );
 }

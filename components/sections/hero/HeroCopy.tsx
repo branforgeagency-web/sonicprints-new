@@ -75,10 +75,10 @@ export default function HeroCopy() {
             </span>
           </Link>
           <Link
-            href="/kits"
+            href="/catalogue"
             className="inline-flex items-center rounded-full border border-cream/25 px-6 py-3 font-medium text-cream transition-colors duration-300 hover:border-cream hover:bg-cream/10"
           >
-            Explore kits
+            Explore the catalogue
           </Link>
         </div>
 

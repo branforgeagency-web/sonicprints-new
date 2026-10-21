@@ -21,7 +21,7 @@ const SLIDES = [
       "One crew handles design, approval, production and delivery",
       `A detailed quote within ${QUOTE_SLA}`,
     ],
-    cta: { label: "Explore the 12 kits", href: "/kits" },
+    cta: { label: "Explore the catalogue", href: "/catalogue" },
     alt: { label: "Get a bulk quote", href: "/contact?type=b2b" },
   },
   {

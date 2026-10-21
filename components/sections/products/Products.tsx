@@ -141,7 +141,7 @@ export default function Products() {
             {/* last tile: carry on to the full range */}
             <li className={`${CARD_W} shrink-0`}>
               <Link
-                href="/kits#catalogue"
+                href="/catalogue#catalogue"
                 className="group relative flex h-full flex-col justify-between overflow-hidden rounded-[28px] bg-ink p-6 text-cream transition-transform duration-500 hover:-translate-y-1.5"
               >
                 <span aria-hidden="true" className="absolute -right-16 -bottom-16 h-56 w-56 rounded-full bg-accent/40 blur-3xl transition-transform duration-700 group-hover:scale-125" />
@@ -165,7 +165,7 @@ export default function Products() {
             <span ref={barRef} className="absolute inset-0 origin-left rounded-full bg-accent" style={{ transform: "scaleX(0)" }} />
           </span>
           <Link
-            href="/kits#catalogue"
+            href="/catalogue#catalogue"
             className="group relative inline-flex shrink-0 items-center gap-3 overflow-hidden rounded-full bg-ink py-1.5 pr-1.5 pl-5 text-sm font-semibold text-cream"
           >
             <span aria-hidden="true" className="absolute inset-0 translate-y-full rounded-full bg-accent transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-y-0" />

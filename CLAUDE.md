@@ -31,8 +31,8 @@ Read this file instead of re-scanning the repo. Update it when structure changes
 ## Routes (`app/`)
 | Route | File | Renders |
 |---|---|---|
-| `/` | `page.tsx` | Hero → About → Marquee → Products (FEATURED products — items with `featured: true` in catalogue.json — with AddToCart, pinned sideways scroll; last tile + View more → /kits#catalogue) → Audiences (B2B/B2C) → Reviews |
-| `/kits` | `kits/page.tsx` | `sections/kits/Kits.tsx` — KitRingScene hero (10 catalogue categories as ring cards, label "CATEGORY"; panel CTA → /categories/<slug>) + panel, `#catalogue` uses `StackedCards` ("Browse by category" — the 10 catalogue categories; each card links to /categories/<slug>), WhatsApp prompt, CtaBand |
+| `/` | `page.tsx` | Hero → About → Marquee → Products (FEATURED products — items with `featured: true` in catalogue.json — with AddToCart, pinned sideways scroll; last tile + View more → /catalogue#catalogue) → Audiences (B2B/B2C) → Reviews |
+| `/catalogue` (old `/kits` redirects, in next.config.ts) | `catalogue/page.tsx` | `sections/kits/Kits.tsx` — KitRingScene hero (10 catalogue categories as ring cards, label "CATEGORY"; panel CTA → /categories/<slug>) + panel, `#catalogue` uses `StackedCards` ("Browse by category" — the 10 catalogue categories; each card links to /categories/<slug>), WhatsApp prompt, CtaBand |
 | `/how-it-works` | `how-it-works/page.tsx` | `HowItWorks.tsx` — pinned PipelineScene (7 stages), promises, `<Crew />` (`#crew`), FAQ link, CtaBand |
 | `/faq` | `faq/page.tsx` (FAQPage JSON-LD) | `faq/Faq.tsx` + `faqs.ts` — GlyphMorphScene hero ("?"→"✓"→"!"), search, tabs, accordion |
 | `/categories/[slug]` | `categories/[slug]/page.tsx` (generateStaticParams, slug in Suspense) | `sections/category/CategoryProducts.tsx` — category intro, product grid with AddToCart, other categories |
@@ -51,7 +51,7 @@ Layout (`app/layout.tsx`): `<Navbar />` + children + `<Footer />`.
 ## Components (`components/`)
 - Orders (FRONT-END ONLY demo, user chose this): `lib/orders.ts` — `ORDER_STEPS` (7 stages + crew owner), `placeOrder`, `useOrders`, `orderMessage`; saved in localStorage, `step` never advances (no backend). Upgrade path: replace this module with API/DB + admin.
 - `cart/` — quote cart (no prices): store in `lib/cart.ts` (useSyncExternalStore + localStorage, `cart.add/setQty/remove/clear/open/close`, `useCart`), `CartButton` (navbar, count badge), `CartDrawer` (in layout; edit qty, remove, send all on WhatsApp), `QtyStepper` (optional `onRemove` at 1), `AddToCart` (button → becomes − qty + bound to the cart line once added; used on home cards and product `BuyBox`).
-- `nav/Navbar.tsx` — owns `NAV_LINKS` (Home `/#home`, About `/#about`, Kits `/kits`, How It Works, FAQ) + CTA "Get a Quote" → `/contact`. Active state: `usePathname` + section scroll-spy on `/`.
+- `nav/Navbar.tsx` — owns `NAV_LINKS` (Home `/#home`, About `/#about`, Catalogue `/catalogue`, How It Works, FAQ) + CTA "Get a Quote" → `/contact`. Active state: `usePathname` + section scroll-spy on `/`.
 - `footer/Footer.tsx` (+ `ScrollToTop`) — columns Explore / Help / Contact. Known TODO: footer links don't exactly match navbar; user hasn't decided between aligning links vs redesign.
 - `sections/*` — one folder per section, each with `index.ts`: about, crew, faq, hero (`Hero.tsx` + `HeroCopy.tsx` cycling word), how-it-works, kits, marquee (uses CurvedLoop), quote (`Quote`, `QuoteForm` — sends via WhatsApp/mailto, `ContactSection` — channel rows + dark-filtered cropped map), reviews.
 - `ui/` — `Reveal` (scroll reveal via `hooks/useReveal`), `CtaBand`.

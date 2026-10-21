@@ -4,17 +4,17 @@ import { cart, useCart } from "@/lib/cart";
 
 /**
  * Floating cart button stacked just above the scroll-to-top arrow (bottom-right).
- * Appears once the cart has items, bounces when the count changes, and opens the cart.
+ * Always shown (hidden only while the cart drawer is open), bounces when the count changes, and opens the cart.
  */
 export default function FloatingCart() {
   const { count, open } = useCart();
-  const visible = count > 0 && !open;
+  const visible = !open;
 
   return (
     <button
       type="button"
       onClick={cart.open}
-      aria-label={`Open cart, ${count} ${count === 1 ? "piece" : "pieces"}`}
+      aria-label={count ? `Open cart, ${count} ${count === 1 ? "piece" : "pieces"}` : "Open cart"}
       tabIndex={visible ? 0 : -1}
       aria-hidden={!visible}
       className={`fixed right-4 bottom-[76px] z-30 grid h-12 w-12 place-items-center rounded-full bg-accent text-cream shadow-[0_12px_30px_-10px_rgba(189,85,1,0.7)] transition-[transform,opacity,background-color] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-ink active:scale-90 sm:right-6 sm:bottom-[92px] sm:h-14 sm:w-14 ${
@@ -29,9 +29,11 @@ export default function FloatingCart() {
           <circle cx="17" cy="20" r="1.3" />
         </svg>
       </span>
-      <span className="absolute -top-1 -right-1 grid h-5 min-w-5 place-items-center rounded-full bg-ink px-1 text-[10px] font-bold text-cream tabular-nums ring-2 ring-cream">
-        {count > 999 ? "999+" : count}
-      </span>
+      {count > 0 && (
+        <span className="absolute -top-1 -right-1 grid h-5 min-w-5 place-items-center rounded-full bg-ink px-1 text-[10px] font-bold text-cream tabular-nums ring-2 ring-cream">
+          {count > 999 ? "999+" : count}
+        </span>
+      )}
     </button>
   );
 }

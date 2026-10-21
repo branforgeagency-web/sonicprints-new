@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------------ */
 /* The 12 SonicPrints kits — single source for the home cards,         */
-/* the /kits page and the quote form.                                  */
+/* the /catalogue page and the quote form.                                  */
 /* ------------------------------------------------------------------ */
 
 export interface Kit {

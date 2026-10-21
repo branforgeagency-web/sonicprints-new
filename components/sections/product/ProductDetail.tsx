@@ -103,7 +103,10 @@ export default function ProductDetail({ product }: { product: Product }) {
           <Reveal>
             <SectionTitle eyebrow="Details" title="Specifications" />
             <dl className="overflow-hidden rounded-[24px] ring-1 ring-ink/10">
-              {[...product.specs, ["Turnaround", product.turnaround] as [string, string]].map(([k, v], i) => (
+              {(product.specs.some(([k]) => k === "Turnaround")
+                ? product.specs
+                : [...product.specs, ["Turnaround", product.turnaround] as [string, string]]
+              ).map(([k, v], i) => (
                 <div key={k} className={`grid grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-4 px-5 py-4 text-sm ${i % 2 ? "bg-white" : "bg-cream/60"}`}>
                   <dt className="font-semibold text-ink">{k}</dt>
                   <dd className="text-ink/70">{v}</dd>

@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
     agentFeedback: true,
   },
   cacheComponents: true,
+  async redirects() {
+    return [{ source: "/kits", destination: "/catalogue", permanent: true }];
+  },
   partialPrefetching: true,
   turbopack: {
     rules: {
