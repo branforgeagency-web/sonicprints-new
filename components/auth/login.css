@@ -1,0 +1,15 @@
+/* Login card animations — kept local to the auth folder.
+   Plain CSS (this project's Turbopack rule disables CSS modules), so every class is prefixed `login-`. */
+
+/* Form rows rising in */
+.login-rise {
+  animation: login-rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes login-rise {
+  from { transform: translateY(12px); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .login-rise { animation: none; }
+}

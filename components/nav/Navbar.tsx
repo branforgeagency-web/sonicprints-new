@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import logo from "@/app/public/images/nav/soniclogo-trimmed.png";
 import { CartButton } from "@/components/cart";
+import { LoginButton } from "@/components/auth";
 
 /* ------------------------------------------------------------------ */
 /* Content                                                             */
@@ -176,6 +177,9 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2 justify-self-end">
           <CartButton />
+          <div className="hidden md:block">
+            <LoginButton />
+          </div>
           {/* CTA (desktop) */}
           <Link
             href={CTA.href}
@@ -262,6 +266,7 @@ export default function Navbar() {
           style={{ transitionDelay: open ? `${200 + NAV_LINKS.length * 70}ms` : "0ms" }}
         >
           <p className="max-w-[18rem] text-sm leading-relaxed text-ink/70">{TAGLINE}</p>
+          <LoginButton variant="block" onOpen={close} />
           <Link
             href={CTA.href}
             onClick={close}

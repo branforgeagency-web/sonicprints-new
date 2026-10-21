@@ -1,3 +1,4 @@
 export { default as CtaBand } from "./CtaBand";
 export { default as Reveal } from "./Reveal";
 export { default as ProductMedia } from "./ProductMedia";
+export { default as Loader } from "./Loader";
