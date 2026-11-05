@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState, type FormEvent } from "react";
-import { normaliseId, orderMessage, ORDER_STEPS, useOrders, type Order } from "@/lib/orders";
+import { normaliseId, ORDER_STEPS, useOrders, type Order } from "@/lib/orders";
 import { QUOTE_SLA, whatsappLink } from "@/lib/site";
 
 const dateFmt = new Intl.DateTimeFormat("en-IN", { dateStyle: "medium", timeStyle: "short" });
@@ -53,10 +53,7 @@ function OrderCard({ order, fresh }: { order: Order; fresh: boolean }) {
     <article className="overflow-hidden rounded-[28px] bg-white ring-1 ring-ink/[0.07]">
       {fresh && (
         <div className="flex flex-wrap items-center justify-between gap-3 bg-accent px-6 py-4 text-cream sm:px-8">
-          <p className="font-semibold">🎉 Order placed! WhatsApp opened with your order — hit send so our team receives it.</p>
-          <a href={whatsappLink(orderMessage(order))} target="_blank" rel="noopener noreferrer" className="rounded-full bg-cream px-4 py-2 text-sm font-semibold text-ink">
-            Didn&apos;t open? Send again
-          </a>
+          <p className="font-semibold">🎉 Order placed! Our team has received it — expect your quote within {QUOTE_SLA}.</p>
         </div>
       )}
       <div className="flex flex-wrap items-end justify-between gap-4 border-b border-ink/[0.07] px-6 py-6 sm:px-8">

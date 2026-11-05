@@ -5,9 +5,10 @@ import { useRouter } from "next/navigation";
 import { useState, type FormEvent, type ReactNode } from "react";
 import { ProductMedia } from "@/components/ui";
 import { cart, useCart } from "@/lib/cart";
+import { sendOrderEmail } from "@/lib/orderEmail";
 import { orderMessage, placeOrder, type Order } from "@/lib/orders";
 import { productBySlug } from "@/lib/products";
-import { QUOTE_SLA, whatsappLink } from "@/lib/site";
+import { CONTACT, QUOTE_SLA, whatsappLink } from "@/lib/site";
 
 const EASE = "ease-[cubic-bezier(0.22,1,0.36,1)]";
 const validPhone = (v: string) => /^(\+?91|0)?[6-9]\d{9}$/.test(v.replace(/[\s-]/g, ""));
@@ -53,7 +54,7 @@ function Segmented<T extends string>({ value, options, onChange, label }: { valu
   );
 }
 
-/** Checkout: customer details + order summary → places the order and hands it to WhatsApp. */
+/** Checkout: customer details + order summary → places the order and emails it to the team. */
 export default function Checkout() {
   const router = useRouter();
   const { items, count } = useCart();
@@ -61,6 +62,9 @@ export default function Checkout() {
   const [fulfilment, setFulfilment] = useState<Order["fulfilment"]>("Pickup");
   const [f, setF] = useState({ name: "", business: "", phone: "", email: "", address: "", notes: "" });
   const [touched, setTouched] = useState(false);
+  const [sending, setSending] = useState(false);
+  /** Order saved on this device whose email failed — a retry resends it instead of saving a duplicate. */
+  const [failed, setFailed] = useState<Order | null>(null);
   const set = (k: keyof typeof f) => (e: { target: { value: string } }) => setF((s) => ({ ...s, [k]: e.target.value }));
 
   const errors = {
@@ -72,19 +76,26 @@ export default function Checkout() {
   };
   const valid = Object.values(errors).every((e) => !e);
 
-  const submit = (e: FormEvent) => {
+  const submit = async (e: FormEvent) => {
     e.preventDefault();
     setTouched(true);
-    if (!valid || !items.length) return;
-    const order = placeOrder({
-      type,
-      fulfilment,
-      address: fulfilment === "Delivery" ? f.address.trim() : "",
-      notes: f.notes.trim(),
-      customer: { name: f.name.trim(), phone: f.phone.trim(), email: f.email.trim(), business: type === "B2B" ? f.business.trim() : "" },
-      lines: items.map((i) => ({ ...i, name: productBySlug(i.slug)?.name ?? i.slug })),
-    });
-    window.open(whatsappLink(orderMessage(order)), "_blank", "noopener,noreferrer");
+    if (!valid || !items.length || sending) return;
+    setSending(true);
+    const order =
+      failed ??
+      placeOrder({
+        type,
+        fulfilment,
+        address: fulfilment === "Delivery" ? f.address.trim() : "",
+        notes: f.notes.trim(),
+        customer: { name: f.name.trim(), phone: f.phone.trim(), email: f.email.trim(), business: type === "B2B" ? f.business.trim() : "" },
+        lines: items.map((i) => ({ ...i, name: productBySlug(i.slug)?.name ?? i.slug })),
+      });
+    if (!(await sendOrderEmail(order))) {
+      setSending(false);
+      setFailed(order);
+      return;
+    }
     cart.clear();
     router.push(`/track?id=${order.id}&new=1`);
   };
@@ -207,14 +218,23 @@ export default function Checkout() {
             <span className="text-sm font-semibold text-accent">Confirmed within {QUOTE_SLA}</span>
           </div>
 
-          <button type="submit" className="group relative mt-6 flex w-full items-center justify-between overflow-hidden rounded-full bg-ink py-2 pr-2 pl-6 font-semibold text-cream">
+          <button type="submit" disabled={sending} aria-busy={sending} className="group relative mt-6 flex w-full items-center justify-between overflow-hidden rounded-full bg-ink py-2 pr-2 pl-6 font-semibold text-cream disabled:cursor-wait disabled:opacity-80">
             <span aria-hidden="true" className={`absolute inset-0 translate-y-full rounded-full bg-accent transition-transform duration-500 ${EASE} group-hover:translate-y-0`} />
-            <span className="relative">Place order</span>
+            <span className="relative">{sending ? "Placing order…" : failed ? "Try again" : "Place order"}</span>
             <span aria-hidden="true" className={`relative grid h-10 w-10 place-items-center rounded-full bg-cream text-ink transition-transform duration-500 ${EASE} group-hover:-rotate-45`}>→</span>
           </button>
           {touched && !valid && <p className="mt-3 text-center text-xs text-accent">Please fix the highlighted fields.</p>}
+          {failed && !sending && (
+            <p role="alert" className="mt-3 text-center text-xs leading-relaxed text-accent">
+              We couldn&apos;t send your order. Check your connection and try again, or{" "}
+              <a href={whatsappLink(orderMessage(failed))} target="_blank" rel="noopener noreferrer" className="font-semibold underline underline-offset-2">
+                send it on WhatsApp
+              </a>{" "}
+              / call {CONTACT.phone}.
+            </p>
+          )}
           <p className="mt-4 text-xs leading-relaxed text-ink/50">
-            Placing your order opens WhatsApp with everything filled in — hit send so our team receives it. You&apos;ll get an order ID to track it.
+            Your order goes straight to our team. You&apos;ll get an order ID to track it.
           </p>
         </div>
       </aside>
